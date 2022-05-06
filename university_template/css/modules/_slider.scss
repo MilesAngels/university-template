@@ -1,0 +1,43 @@
+.carousel {
+    position: relative;
+    justify-content: center;
+}
+
+.carousel-item {
+    background: $black;
+    padding: 1em;
+    font-family: $paragraph;
+    color: #fff;
+    display: none;
+    width: 100%;
+    height: auto;
+    
+    &--active {
+        display: block;
+    }
+}
+
+.carousel-nav {
+    width: 100%;
+    padding: 20px;
+    position: absolute;
+    bottom: 30px;
+    left: 0;
+    //background: red;
+    text-align: center;
+}
+
+.carousel-button {
+    width: 10px;
+    height: 10px;
+    display: inline-block;
+    background: rgba(255,255,255, 0.5);
+    border-radius: 50%;
+    margin: 0 5px;
+    cursor: pointer;
+
+    &--selected {
+        background: rgba(255,255,255, 0.3);
+    }
+}
+

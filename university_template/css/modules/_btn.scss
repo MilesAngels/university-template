@@ -1,0 +1,22 @@
+.btn {
+    display: inline-block;
+    cursor: pointer;
+    border-radius: 4px;
+    overflow: hidden;
+    text-decoration: none;
+    //color: #fff;
+    font-size: 1.19rem;
+    padding: 12px 24px;
+    border: none;
+    outline: none;
+    
+    &--small {
+        font-size: 1rem;
+        padding: 5px 12px;
+    }
+
+    &--login {
+        background-color: $red;
+        color: $white;
+    }
+}

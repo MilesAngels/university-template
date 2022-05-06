@@ -1,0 +1,72 @@
+.wrapper {
+    width: 100%;
+    display: block;
+    margin: 0 auto;    
+}
+
+.flex {
+    display: flex;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    margin: 2rem;
+
+    &--four-column {
+        flex-direction: row;
+        margin: 0;
+    }
+
+    &--relative {
+        display: flex;
+        flex-direction: column;
+        margin: 2rem;
+        position: relative;
+    }
+
+}
+
+.center-text {
+    text-align: center;
+}
+
+.vertical-align {
+    vertical-align: middle;
+}
+
+.headline {
+    font-family: 'Cinzel', serif;
+    
+    &--h1 {
+        font-family: 'Cinzel', serif;
+        font-weight: 400;
+    }
+
+    &--h2 {
+        font-family: 'Cinzel', serif;
+        font-weight: 800;
+        line-height: 2.5rem;
+    }
+
+    &--h3 {
+        font-family: 'Cinzel', serif;
+        font-weight: 600;
+        line-height: 2.5rem;
+    }
+
+}
+
+
+.underline {
+    border-bottom: 1px solid black;
+    margin-bottom: 1.75rem;
+}
+
+.paragraph {
+    font-family: 'Oxygen', sans-serif;
+}
+
+.filter {
+    filter:saturate(170%) brightness(120%);
+}
