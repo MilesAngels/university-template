@@ -8,23 +8,13 @@
     padding: 1em;
     font-family: $paragraph;
     color: #fff;
-    display: none;
     width: 100%;
     height: auto;
+    display: none;
     
     &--active {
         display: block;
     }
-}
-
-.carousel-nav {
-    width: 100%;
-    padding: 20px;
-    position: absolute;
-    bottom: 30px;
-    left: 0;
-    //background: red;
-    text-align: center;
 }
 
 .carousel-button {
@@ -39,5 +29,16 @@
     &--selected {
         background: rgba(255,255,255, 0.3);
     }
+}
+
+.carousel-nav {
+    width: 100%;
+    padding: 20px 0;
+    position: absolute;
+    bottom: 30px;
+    left: 0;
+    background-color: red;
+    text-align: center;
+    z-index: 1;
 }
 

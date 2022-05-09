@@ -1,8 +1,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Cinzel&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Oxygen&display=swap");
 * {
-  padding: 0;
   margin: 0;
+  padding: 0;
   list-style-type: none;
   text-decoration: none;
 }
@@ -54,6 +54,10 @@
   text-align: center;
 }
 
+.vertical-align {
+  vertical-align: middle;
+}
+
 .headline {
   font-family: 'Cinzel', serif;
 }
@@ -96,7 +100,9 @@ header {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  line-height: 6vh;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   height: 6vh;
   margin: 0;
   padding: 1rem 2.5rem;
@@ -237,22 +243,13 @@ header h1 > a {
   padding: 1em;
   font-family: "Oxygen", sans-serif;
   color: #fff;
-  display: none;
   width: 100%;
   height: auto;
+  display: none;
 }
 
 .carousel-item--active {
   display: block;
-}
-
-.carousel-nav {
-  width: 100%;
-  padding: 20px;
-  position: absolute;
-  bottom: 30px;
-  left: 0;
-  text-align: center;
 }
 
 .carousel-button {
@@ -267,5 +264,16 @@ header h1 > a {
 
 .carousel-button--selected {
   background: rgba(255, 255, 255, 0.3);
+}
+
+.carousel-nav {
+  width: 100%;
+  padding: 20px 0;
+  position: absolute;
+  bottom: 30px;
+  left: 0;
+  background-color: red;
+  text-align: center;
+  z-index: 1;
 }
 /*# sourceMappingURL=style.css.map */
